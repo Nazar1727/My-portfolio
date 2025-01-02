@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+.wrap {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.projectsContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 30px;
+    /* background-color: brown; */
+}
+
+.projectItem {
+    width: 350px;
+    height: 450px;
+    box-shadow: 0 0 10px #999;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.photoContainer {
+    width: 95%;
+    height: 200px;
+    /* background-color: #333; */
+}
+
+.projectItem ul {
+    width: 90%;
+}
+
+.projectItem a {
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+
+.projectItem a i {
+    margin-right: 4px;
+}
+
+.projectItem p {
+    width: 100%;
+    font-weight: 100;
+}
+
+.headerContainer {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.headerContainer a {
+    text-decoration: none;
+    color: #333;
+    margin-left: 10px;
+}
+
+#project1 {
+    background-image: url(http://127.0.0.1:5500/img/MacBook%20Air%202022.png);
+    background-size: cover;
+    background-position: center;
+}
+/* Блок 2. */
+
+.projectItem2 {
+    width: 350px;
+    height: 450px;
+    box-shadow: 0 0 10px #999;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.photoContainer2 {
+    width: 95%;
+    height: 200px;
+    /* background-color: #333; */
+}
+
+.projectItem2 ul {
+    width: 90%;
+}
+
+.projectItem2 a {
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+
+.projectItem2 a i {
+    margin-right: 4px;
+}
+
+.projectItem2 p {
+    width: 100%;
+    font-weight: 100;
+}
+#project2 {
+    background-image: url(http://127.0.0.1:5500/img/MacBook.png);
+    background-size: cover;
+    background-position: center;
+}
+/* Блок 3 */
+.projectItem3 {
+    width: 350px;
+    height: 450px;
+    box-shadow: 0 0 10px #999;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.photoContainer3 {
+    width: 95%;
+    height: 200px;
+    /* background-color: #333; */
+}
+
+.projectItem3 ul {
+    width: 90%;
+}
+
+.projectItem3 a {
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+
+.projectItem3 a i {
+    margin-right: 4px;
+}
+
+.projectItem3 p {
+    width: 100%;
+    font-weight: 100;
+}
+#project3 {
+    background-image: url(http://127.0.0.1:5500/img/MacBook%2001.png);
+    background-size: cover;
+    background-position: center;
+}
+/* Блок 4 */
+.projectItem4 {
+    width: 350px;
+    height: 450px;
+    box-shadow: 0 0 10px #999;
+    margin: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.photoContainer4 {
+    width: 95%;
+    height: 200px;
+    /* background-color: #333; */
+}
+
+.projectItem4 ul {
+    width: 90%;
+}
+
+.projectItem4 a {
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin: 0 10px;
+}
+
+.projectItem4 a i {
+    margin-right: 4px;
+}
+
+.projectItem4 p {
+    width: 100%;
+    font-weight: 100;
+}
+#project4 {
+    background-image: url(http://127.0.0.1:5500/img/%D0%9F%D0%BB%D0%B0%D0%BD%D1%88%D0%B5%D1%82.png);
+    background-size: cover;
+    background-position: center;
+}

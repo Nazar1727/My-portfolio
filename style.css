@@ -46,13 +46,18 @@
     margin-right: 5px;
 }
 
-.photo img{
-    width: 320px;
-    height: 420px;
+.photo {
+    width: 300px;
+    height: 370px;
     background-color: #000;
     border-radius: 30px;
     box-shadow: 0 10px 10px #999;
-    /* background-image: url(http://127.0.0.1:5500/img/Rectangle%2032.png); */
+    background-image: url(http://127.0.0.1:5500/img/Rectangle%2032.png);
+}
+.photo img{
+    width: 320px;
+    height: 420px;
+    border-radius: 30px;
 }
 
 .infoContainer .mainInfoContainer {

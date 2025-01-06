@@ -6,34 +6,43 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="./style.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css' integrity='sha512-GmZYQ9SKTnOea030Tbiat0Y+jhnYLIpsGAe6QTnToi8hI2nNbVMETHeK4wm4MuYMQdrc38x+sX77+kVD01eNsQ==' crossorigin='anonymous'/>
-
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
 
 </head>
 <body>
     <div class="wrap">
         <div class="photoContainer">
-            <div class="photo">
+            <div class="photo" data-aos="zoom-out-down">
                 <img src="./img/photo_2025-01-01_19-26-47.jpg" alt="">
+                <canvas id="fireworks"></canvas>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+                <script>
+                    // Ініціалізація AOS
+                    AOS.init({
+                        duration: 1200,
+                        easing: 'ease-in-out',
+                    });
+                </script>
             </div>
         </div>
 
 
         <div class="infoContainer">
             <div class="nameContainer">
-                <h3>Клюс Назар</h3>
-            </div>
+                <div class="titleText">Клюс Назар</div>
+              </div>
             <div class="mainInfoContainer">
-                <h1> <span>/</span>Creator IT Academy </h1>
+                <h1 class="underline-one"> <span>/</span>Creator IT Academy </h1>
                 <p>Мене звати Назар, мені 16 років, я захоплююсь веб-розробками. Я почав програмувати у 15 років і з тих пір опановую це. Про це заняття я вперше дізнався від свого друга і заглибився в його вивчення.</p>
 
                 <div class="controlls">
-                    <a href="./about.html">About me</a>
-                    <a href="./portfolio.html">Portfolio</a>
+                    <a class="button1" href="./about.html">About me</a>
+                    <a class="button2" href="./portfolio.html">Portfolio</a>
                 </div>
 
-                <form action="https://formspree.io/f/xeoogybn" method="POST">
+                <form action="https://formspree.io/f/xbllppvy" method="POST">
                     <input type="email" name="email" placeholder="Your email">
                     <textarea name="message" placeholder="Your message"></textarea>
                      <button type="submit">Send</button>

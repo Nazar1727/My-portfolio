@@ -48,8 +48,8 @@
 }
 
 .photo {
-    width: 300px;
-    height: 370px;
+    width: 350px;
+    height: 420px;
     background-color: #000;
     border-radius: 30px;
     box-shadow: 0 10px 10px #999;
@@ -60,7 +60,34 @@
     height: 420px;
     border-radius: 30px;
 }
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease, filter 0.5s ease;
+}
 
+.photo:hover img {
+    transform: rotate(10deg) scale(1.1);
+    filter: blur(2px) brightness(1.2);
+
+}
+
+.photo:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    height: 450px;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
 .infoContainer .mainInfoContainer {
     padding: 0 50px 0 0;
 }
@@ -73,8 +100,8 @@
 
 .infoContainer .mainInfoContainer .controlls a {
     text-decoration: none;
-    color: #fff;
-    background-color: #000;
+    color: #ffffff;
+    background-color: #333;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -131,9 +158,11 @@ form button{
     width: 150px;
     height: 40px;
     background-color: #333;
-    color: #fff;
+    color: rgb(255, 255, 255);
     border-radius: 5px;
     margin-top: 10px;
+    box-shadow: 0 10px 10px #999;
+
 }
 
 @keyframes blink {
@@ -163,4 +192,78 @@ form button{
     .infoContainer {
         width: 100%;
     }
+}
+.nameContainer{
+    font-size: 25px;
+}
+.titleText {
+    width: 10.5ch;
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid rgb(0, 0, 0); 
+    animation: cursor 0.75s step-end infinite, printed_text 3s steps(29);
+  }
+  
+  @keyframes cursor {
+    0% {
+      border-color: rgb(0, 0, 0);
+    }
+  
+    50% {
+      border-color: transparent;
+    }
+  
+    100% {
+      border-color: white;
+    }
+  }
+  
+  @keyframes printed_text {
+    from {
+      width: 0;
+    }
+  }
+  .underline-one {
+	color: rgb(0, 0, 0);
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    /* background-color: aqua; */
+    width: 350px;
+}
+.underline-one:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.5s;
+}
+
+.underline-one:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px;
+    background-color: orange;
+    transition: width 0.5s;
+
+}
+.button1:hover {
+	background: rgba(255, 255, 255, 0);
+	box-shadow: inset 0 0 0 2px rgb(255, 255, 255);
+}
+  
+.button2:hover {
+	background: rgba(255, 255, 255, 0);
+	box-shadow: inset 0 0 0 2px rgb(255, 255, 255);
 }

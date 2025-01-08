@@ -90,3 +90,19 @@ header p {
 /* body footer{
     margin-top: 300px;
 } */
+.skills ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills li {
+    background: #f1f5ff;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #3d80e4;
+    border: 1px solid #3d80e4;
+}
